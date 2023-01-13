@@ -1,70 +1,108 @@
-# Getting Started with Create React App
+# Frontend Mentor - Order summary card solution
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a solution to the [Order summary card challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/order-summary-component-QlPmajDUj). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
-## Available Scripts
+## Table of contents
 
-In the project directory, you can run:
+- [Overview](#overview)
+  - [The challenge](#the-challenge)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
+  - [Continued development](#continued-development)
+  - [Useful resources](#useful-resources)
+- [Author](#author)
+- [Acknowledgments](#acknowledgments)
 
-### `npm start`
+## Overview
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### The challenge
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Users should be able to:
 
-### `npm test`
+- See hover states for interactive elements
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Screenshot
 
-### `npm run build`
+coming soon
+![](...../images/Screenshot%202023-01-13%20at%15-44-01%20Summary%20Component.png)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Links
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Live Site URL: [Add live site URL here](summary-component-order.netlify.app)
 
-### `npm run eject`
+## My process
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Built with
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- Semantic HTML5 markup
+- CSS custom properties
+- Flexbox
+- Mobile-first workflow
+- [React](https://reactjs.org/) - JS library
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### What I learned
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+It was a really samll project just to test working with React. I'm really proud of the card component:
 
-## Learn More
+To see how you can add code snippets, see below:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```jsx
+import image from '../images/illustration-hero.svg';
+import icon from '../images/icon-music.svg';
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+const Card = () => {
 
-### Code Splitting
+  return (
+    <div id="card">
+      <div id="mainImage"><img src={image} alt="Hero Illustration"/></div>
+      <h1>Order Summary</h1>
+      <p>
+        You can now listen to millions of songs, audiobooks, and podcasts on any
+        device anywhere you like!
+      </p>
+      <div id="price-box">
+        <div> <img src={icon} alt="Music icon"/> </div>
+        <div id="prices">
+          <h2>Annual Plan</h2>
+          <div id="price">$59.99/year</div>
+        </div>
+        <a href="/">Change</a>
+      </div>
+      <div id="buttons-div">
+        <button id="proceed-to-payment-button">
+          Proceed to Payment
+        </button>
+        <button id="cancel-order-button">
+          Cancel Order
+        </button>
+      </div>
+    </div>
+  );
+};
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+export default Card;
+```
 
-### Analyzing the Bundle Size
+### Continued development
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+I'm looking forward to learn more about React using States and Props.
 
-### Making a Progressive Web App
+### Useful resources
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+- [Example resource 1](https://www.youtube.com/watch?v=w7ejDZ8SWv8&t=1561s) - This helped me to understand better how to work with React.
 
-### Advanced Configuration
+## Author
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+- Frontend Mentor - [@Alberto-12](https://www.frontendmentor.io/profile/Alberto-12)
 
-### Deployment
+## Acknowledgments
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+I'm very Thankfull for my mentor
+[Treasure Kabareebe](https://github.com/trekab) that guided me through the process.
 
-### `npm run build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
