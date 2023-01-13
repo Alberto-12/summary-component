@@ -32,7 +32,7 @@ coming soon
 ### Links
 
 
-- Live Site URL: [Add live site URL here](summary-component-order.netlify.app)
+- Live Site URL: [Add live site URL here](https://summary-component-order.netlify.app)
 
 ## My process
 
